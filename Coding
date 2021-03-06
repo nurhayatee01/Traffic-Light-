@@ -1,0 +1,36 @@
+int green = 2; // กำหนดขาใช้งาน 
+int yellow = 3;
+int red = 4;
+
+void setup()
+{
+pinMode(green, OUTPUT); // กำหนดขาทำหน้าที่ให้ขา 2 เป็น OUTPUT 
+pinMode(yellow, OUTPUT); // กำหนดขาทำหน้าที่ให้ขา 3 เป็น OUTPUT 
+pinMode(red, OUTPUT); // กำหนดขาทำหน้าที่ให้ขา 4 เป็น OUTPUT 
+
+digitalWrite(green,LOW);
+digitalWrite(yellow,LOW);
+digitalWrite(red,LOW);
+
+}
+void loop()
+{
+digitalWrite(red,HIGH); 
+delay(2000);
+digitalWrite(yellow,LOW);
+delay(500);
+digitalWrite(green,LOW);
+delay(500);
+digitalWrite(green,HIGH); 
+delay(2000);
+digitalWrite(yellow,LOW);
+delay(500);
+digitalWrite(red,LOW);
+delay(300);
+digitalWrite(yellow,HIGH);
+delay(2000);
+digitalWrite(red,LOW);
+delay(300);
+digitalWrite(green,LOW);
+delay(300);
+}
